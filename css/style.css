@@ -1,8 +1,16 @@
 body {
 	background-color: beige;
 }
-.card:hover {
+.card-img-top:hover,
+.card-body-1:hover,
+.float-button:hover {
 	cursor: pointer;
+}
+.float-button {
+	position: fixed;
+
+	right: 2.5vw;
+	bottom: 2.5vw;
 }
 .container {
 	display: flex;
