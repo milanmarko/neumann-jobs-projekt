@@ -8,7 +8,7 @@ body {
 }
 .float-button {
 	position: fixed;
-
+	z-index: 2;
 	right: 2.5vw;
 	bottom: 2.5vw;
 }
@@ -23,11 +23,21 @@ body {
 	padding: 3vh;
 }
 .card-img-top {
-	height: 60%;
 	object-fit: cover;
 }
-.card-body-1 {
+.h-60 {
+	height: 60%;
+}
+.h-40 {
 	height: 40%;
+}
+.h-50 {
+	height: 50%;
+}
+.h-80-vh {
+	height: 80vh;
+}
+.card-body-1 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -82,5 +92,20 @@ body {
 	}
 	100% {
 		height: 40%;
+	}
+}
+@media only screen and (max-width: 555px) {
+	#card-nj,
+	#card-sj {
+		width: 75vw !important;
+	}
+	#card-nj h1,
+	#card-sj h1 {
+		font-size: 1.5rem;
+	}
+
+	#card-nj p,
+	#card-sj p {
+		font-size: 1rem;
 	}
 }
